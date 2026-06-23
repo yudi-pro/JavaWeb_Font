@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let user={
+        //     name:'Tom',
+        //     age:18,
+        //     gender:'男',
+        //     sing(){
+        //         alert(this.name+'唱歌')
+        //     }
+        // }
+        // //调用对象属性/方法
+        // alert(user.name);
+        // user.sing();
+
+        //JSON
+        let person={
+            name:'Tom',
+            age:18,
+            gender:'男'
+        }
+        //
+        alert(JSON.stringify(person)) //js对象转为json字符串
+        let personJson='{"name":"heima","age":20,"gender":"男"}'
+        //用json.parse转换psersonjson然后调用name属性
+        alert(JSON.parse(personJson).name)
+    </script>
+</body>
+</html>
