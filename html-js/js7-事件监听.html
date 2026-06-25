@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" id="b1" value="点我试试看1">
+    <input type="button" id="b2" value="点我试试看2">
+    <script>
+        //基于addEventListener(可以多次绑定同一事件)
+        let b1=document.querySelector('#b1')
+        b1.addEventListener('click',function() {
+            alert("点你妈");
+        });
+
+        //早期写法
+        //基于onclick
+        document.querySelector('#b2').onclick=()=>{
+            alert('666还点');
+        }
+    </script>
+</body>
+</html>
